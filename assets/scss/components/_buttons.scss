@@ -1,0 +1,31 @@
+.btn-fill-pills{
+    font-family: var(--f-poppins);
+    text-decoration: none;
+    background: #913BFF;
+    border-radius: 100px;
+    padding: 15px 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 148%;
+    color: #FFFFFF;
+    display: inline-block;
+    transition: all .35s;
+
+    @media screen and (max-width : 575px){
+        font-size: 14px;
+        padding: 14px 30px;
+    }
+
+    &:hover{
+        color: #ffffff;
+    }
+    &.variant-alpha{
+        color: #913BFF;
+        background: #ECE2FE;
+
+        &:hover{
+            color: #ffffff;
+            background: #913BFF;
+        }
+    }
+}

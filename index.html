@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>This is simple html starter</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon -->
+    <link rel="icon" href="#" type="image/gif" sizes="20x20">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="hero_style__one">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper h-100">
+                <div class="swiper-slide" style="background: url(assets/images/hero/hs-1.png)">
+
+                </div>
+                <div class="swiper-slide" style="background: url(assets/images/hero/hs-2.png)">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery latest version 3.6.0 -->
+    <script defer src="assets/js/jquery-3.6.0.min.js"></script>
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/lazysizes.min.js" async></script>
+    <script defer src="assets/js/replaceme.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    
+
+    <script>
+
+
+        var heroOne = new Swiper(".hero-slider", {
+            spaceBetween: 0,
+            // effect: "fade",
+            // fadeEffect:{crossFade:true},
+            speed:1500,
+            autoplay:{
+                delay:5000
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            });
+
+
+
+        var replace = new ReplaceMe(document.querySelector('.replace-me'), {
+            animation: 'animated fadeInUp',      // Animation class or classes
+            speed: 3000,  // Delay between each phrase in miliseconds
+            separator: ',',                                     // Phrases separator
+            hoverStop: false,                                   // Stop rotator on phrase hover
+            clickChange: false,                                 // Change phrase on click
+            loopCount: 'infinite',                              // Loop Count - 'infinite' or number
+            autoRun: true,                                      // Run rotator automatically
+            onInit: false,                                      // Function
+            onChange: false,                                    // Function
+            onComplete: false                                   // Function
+        });
+    </script>
+</body>
+
+</html>

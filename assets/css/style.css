@@ -1,0 +1,402 @@
+/*import all separate SCSS file*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+:root {
+  /*color variables*/
+  --color-primary: #000;
+  --color-primary-alt: #000;
+  --f-poppins: 'Poppins', sans-serif;
+  --f-inter: 'Inter', sans-serif;
+  --f-script: 'Dancing Script', cursive;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 8. Avoid text overflows*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none !important;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--f-poppins);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.mr-2 {
+  margin-right: 10px;
+}
+
+.mr-3 {
+  margin-right: 16px;
+}
+
+.mr-4 {
+  margin-right: 24px;
+}
+
+.ml-1 {
+  margin-left: 5px;
+}
+
+.ml-2 {
+  margin-left: 10px;
+}
+
+.ml-3 {
+  margin-left: 16px;
+}
+
+.ml-4 {
+  margin-left: 24px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.preview__hreo {
+  background: rgba(220, 235, 247, 0.25);
+}
+
+.preview__hreo .hero_text__contents h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 134%;
+  color: #010D4C;
+}
+
+.preview__hreo .hero_text__contents h1 span {
+  color: #913BFF;
+}
+
+@media (max-width: 768px) {
+  .preview__hreo .hero_text__contents h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .preview__hreo .hero_text__contents h1 {
+    font-size: 30px;
+  }
+}
+
+.preview__hreo .hero_text__contents p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 148%;
+  color: rgba(0, 40, 78, 0.8);
+  font-family: var(--f-inter);
+  padding-top: 20px;
+}
+
+.preview__hreo .hero-preview {
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 8px 25px -6px;
+          box-shadow: rgba(0, 0, 0, 0.1) -4px 8px 25px -6px;
+}
+
+.preview__hreo .hero__gallary {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+@media (max-width: 1200px) {
+  .preview__hreo .hero__gallary {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.hero_style__one {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 30px 18px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.hero_style__one::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: rgba(5, 5, 5, 0.3);
+  z-index: 2;
+}
+
+.hero_style__one .hero-slider {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero_style__one .hero-slider .swiper-slide {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.btn-fill-pills {
+  font-family: var(--f-poppins);
+  text-decoration: none;
+  background: #913BFF;
+  border-radius: 100px;
+  padding: 15px 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 148%;
+  color: #FFFFFF;
+  display: inline-block;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-fill-pills {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+}
+
+.btn-fill-pills:hover {
+  color: #ffffff;
+}
+
+.btn-fill-pills.variant-alpha {
+  color: #913BFF;
+  background: #ECE2FE;
+}
+
+.btn-fill-pills.variant-alpha:hover {
+  color: #ffffff;
+  background: #913BFF;
+}

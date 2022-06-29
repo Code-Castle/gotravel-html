@@ -1,0 +1,75 @@
+.preview__hreo{
+    background: rgba(220, 235, 247, .25);
+    .hero_text__contents{
+        h1{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 134%;
+            color: #010D4C;
+            span{
+                color:#913BFF;
+            }
+
+            @include tab-lg{
+                font-size : 26px;
+            }
+            @include dasktop-xl{
+                font-size: 30px;
+            }
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 148%;
+            color: rgba(0,40,78,.8);
+            font-family: var(--f-inter);
+            padding-top: 20px;
+           
+        }
+    }
+
+    .hero-preview{
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 8px 25px -6px;
+    }
+    .hero__gallary{
+        transform: translateX(50px);
+
+        @include dasktop-xl{
+            transform: translateX(0);
+        }
+    }
+}
+
+.hero_style__one{
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    margin: 30px 18px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background: rgba(5, 5, 5, 0.3);
+        z-index: 2;
+    }
+
+
+    .hero-slider{
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        .swiper-slide{
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+    }
+}
